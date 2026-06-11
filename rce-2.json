@@ -1,4 +1,4 @@
 {
     "flags": "-HanriE",
-    "pattern": "(root:|(uid|gid|groups)=\\d+|bytes from \\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b|Configuration File \\(php\\.ini\\) Path |vulnerable 10|Trying \\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b|\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b\\s+localhost|BROADCAST,MULTICAST|drwxr-xr|Active Internet connections|Syntax error|sh:|Average Speed   Time|dir: cannot access|<script>alert\\(1\\)</script>|drwxrwxr|GNU/Linux)"
+    "pattern": "(root:|uid=[0-9]+|gid=[0-9]+|groups=[0-9]+|bytes from [0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}|Configuration File.*php\\.ini|Trying [0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}|BROADCAST,MULTICAST|drwxr-xr|drwxrwxr|Active Internet connections|sh:|GNU/Linux|Syntax error)"
 }
